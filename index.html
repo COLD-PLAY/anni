@@ -12,7 +12,7 @@
         body {
             -webkit-font-smoothing: antialiased;
             font-family: Times New Roman, NSimSun, sans-serif;
-            background-image: url('https://github.com/COLD-PLAY/anni/raw/master/sun.jpg');
+            background-image: linear-gradient(297deg, #fb0000, #f36545, #e2957e, #c1beb9);
             background-size: cover;
             background-repeat: no-repeat;
             font-size: 85%;
@@ -39,17 +39,18 @@
         }
         
         .timer b {
-            color: rgb(215, 196, 187);
+            color: #e74444;
         }
     </style>
 </head>
 
-<body>
+<body id="body">
     <div class="content">
-        <h2>Sun，我們已經在一起</h2>
+        <h2 onmousemove="show()" onmouseout="hide()">Sun，我們已經在一起</h2>
         <div class="timer">
             <b id="d"></b> 天 <b id="h"></b> 小時 <b id="m"></b> 分鐘 <b id="s"></b> 秒
         </div>
+        <b> 綫索就在這個網站 </b>
     </div>
     <script language="javascript">
         function timer() {
@@ -74,6 +75,15 @@
         }
         timer();
         setInterval(timer, 1000);
+    </script>
+
+    <script>
+        function show() {
+            document.getElementById('body').style.backgroundImage="url('https://github.com/COLD-PLAY/anni/raw/master/sun.jpg')";
+        }
+        function hide() {
+            document.getElementById('body').style.backgroundImage="linear-gradient(297deg, #fb0000, #f36545, #e2957e, #c1beb9)";
+        }
     </script>
 </body>
 
