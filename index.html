@@ -12,7 +12,7 @@
         body {
             -webkit-font-smoothing: antialiased;
             font-family: Times New Roman, NSimSun, sans-serif;
-            background-image: linear-gradient(297deg, #fb0000, #f36545, #e2957e, #c1beb9);
+            background-image: none;
             background-size: cover;
             background-repeat: no-repeat;
             font-size: 85%;
@@ -42,6 +42,13 @@
             color: #e74444;
         }
 
+        .answer {
+            position: absolute;
+            top: 95%;
+            text-align: center;
+            color: #ffffff;
+        }
+
     </style>
 </head>
 
@@ -53,6 +60,8 @@
         </div>
         <b id="綫索"> 綫索就在這個網站的根目錄中 </b>
     </div>
+    <b class="answer">謝謝你在這麽隱藏的地方找到了我，不過這還不夠，請在你電腦裏面繼續尋找下一個/被抛棄/的綫索吧！</b>
+
     <script language="javascript">
         function timer() {
           var start = new Date("2019-10-22 00:00:00");
@@ -94,7 +103,7 @@
             document.getElementById('綫索').style.color = '#ffffff';
         }
         function hide() {
-            document.getElementById('body').style.backgroundImage="linear-gradient(297deg, #fb0000, #f36545, #e2957e, #c1beb9)";
+            document.getElementById('body').style.backgroundImage="none";
             document.getElementById('d').style.color = "#e74444";
             document.getElementById('h').style.color = "#e74444";
             document.getElementById('m').style.color = "#e74444";
@@ -104,9 +113,7 @@
             document.getElementById('時').style.color = "#e74444";
             document.getElementById('分').style.color = "#e74444";
             document.getElementById('秒').style.color = "#e74444";
-
         }
     </script>
 </body>
-
 </html>
