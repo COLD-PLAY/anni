@@ -50,7 +50,7 @@
         <div class="timer">
             <b id="d"></b> 天 <b id="h"></b> 小時 <b id="m"></b> 分鐘 <b id="s"></b> 秒
         </div>
-        <b> 綫索就在這個網站 </b>
+        <b> 綫索就在這個網站的根目錄中 </b>
     </div>
     <script language="javascript">
         function timer() {
@@ -79,10 +79,18 @@
 
     <script>
         function show() {
-            document.getElementById('body').style.backgroundImage="url('https://github.com/COLD-PLAY/anni/raw/master/sun.jpg')";
+            document.getElementById('body').style.backgroundImage = "url('https://github.com/COLD-PLAY/anni/raw/master/sun.jpg')";
+            document.getElementById('d').style.color = "#ffffff";
+            document.getElementById('h').style.color = "#ffffff";
+            document.getElementById('m').style.color = "#ffffff";
+            document.getElementById('s').style.color = "#ffffff";
         }
         function hide() {
             document.getElementById('body').style.backgroundImage="linear-gradient(297deg, #fb0000, #f36545, #e2957e, #c1beb9)";
+            document.getElementById('d').style.color = "#e74444";
+            document.getElementById('h').style.color = "#e74444";
+            document.getElementById('m').style.color = "#e74444";
+            document.getElementById('s').style.color = "#e74444";
         }
     </script>
 </body>
