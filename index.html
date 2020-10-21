@@ -41,6 +41,7 @@
         .timer b {
             color: #e74444;
         }
+
     </style>
 </head>
 
@@ -48,9 +49,9 @@
     <div class="content">
         <h2 onmousemove="show()" onmouseout="hide()">Sun，我們已經在一起</h2>
         <div class="timer">
-            <b id="d"></b> 天 <b id="h"></b> 小時 <b id="m"></b> 分鐘 <b id="s"></b> 秒
+            <b id="d"></b> <b id="天"> 天 </b> <b id="h"></b> <b id="時"> 小時 </b> <b id="m"></b> <b id="分"> 分鐘 </b> <b id="s"></b> <b id="秒"> 秒 </b>
         </div>
-        <b> 綫索就在這個網站的根目錄中 </b>
+        <b id="綫索"> 綫索就在這個網站的根目錄中 </b>
     </div>
     <script language="javascript">
         function timer() {
@@ -84,6 +85,13 @@
             document.getElementById('h').style.color = "#ffffff";
             document.getElementById('m').style.color = "#ffffff";
             document.getElementById('s').style.color = "#ffffff";
+
+            document.getElementById('天').style.color = "#ffffff";
+            document.getElementById('時').style.color = "#ffffff";
+            document.getElementById('分').style.color = "#ffffff";
+            document.getElementById('秒').style.color = "#ffffff";
+
+            document.getElementById('綫索').style.color = '#ffffff';
         }
         function hide() {
             document.getElementById('body').style.backgroundImage="linear-gradient(297deg, #fb0000, #f36545, #e2957e, #c1beb9)";
@@ -91,6 +99,12 @@
             document.getElementById('h').style.color = "#e74444";
             document.getElementById('m').style.color = "#e74444";
             document.getElementById('s').style.color = "#e74444";
+            
+            document.getElementById('天').style.color = "#e74444";
+            document.getElementById('時').style.color = "#e74444";
+            document.getElementById('分').style.color = "#e74444";
+            document.getElementById('秒').style.color = "#e74444";
+
         }
     </script>
 </body>
